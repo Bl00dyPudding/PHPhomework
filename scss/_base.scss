@@ -16,11 +16,11 @@ body {
   & img {
     width: 100%;
     height: 100%;
-    transition: transform 1s;
+    transition: all 1s;
     filter: blur(3px);
-    z-index: 0;
+
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
       filter: none;
     }
   }
