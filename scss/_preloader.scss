@@ -1,8 +1,8 @@
 #preloader {
-  position: absolute;
+  position: fixed;
   top: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: #000;
   z-index: 999;
 }
@@ -27,7 +27,7 @@
   width:20px;
   height:36px;
   opacity:0;
-  font-family:Helvetica, Arial, sans-serif;
+  font-family:'Roboto', sans-serif;
   animation:move 2s linear infinite;
   -o-animation:move 2s linear infinite;
   -moz-animation:move 2s linear infinite;
@@ -36,7 +36,7 @@
   -o-transform:rotate(180deg);
   -moz-transform:rotate(180deg);
   -webkit-transform:rotate(180deg);
-  color:#35C4F0;
+  color:#fff;
 }
 
 #load div:nth-child(2) {

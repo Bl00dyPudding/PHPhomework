@@ -24,6 +24,10 @@
     <main class="gallery">
         <?php echo renderImages('img'); ?>
     </main>
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="" class="modal-content" alt="" id="bigImg">
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
