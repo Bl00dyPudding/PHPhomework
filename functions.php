@@ -20,5 +20,3 @@ function renderImages ($imgDirName) {
     return $HTMLTags;
 
 }
-
-//
