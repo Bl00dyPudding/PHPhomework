@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  background-color: #333;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  & a {
+    height: 100%;
+  }
+  & img {
+    width: 100%;
+    transition: all 1s;
+    filter: blur(3px);
+    &:hover {
+      transform: scale(1.02);
+      filter: none;
+    }
+  }
+}
+
