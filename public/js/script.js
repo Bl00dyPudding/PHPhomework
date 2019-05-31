@@ -17,9 +17,12 @@ let closeModal = () => {
     document.getElementById("modal").style.display = "none";
 };
 
-let currentImg = number => {
+let currentImg = (number, viewsCount) => {
     let bigImg = document.getElementById('bigImg');
     let img = document.getElementById(`img${number}`);
     bigImg.src = img.src;
-};
 
+    let views = document.getElementById('viewsCounter');
+    views.innerText = `Просмотров: ${viewsCount}`;
+
+};

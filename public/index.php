@@ -1,3 +1,4 @@
+<?php require_once('../config/config.php'); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,13 +21,15 @@
             <div>L</div>
         </div>
     </section>
-    <?php include_once ('functions.php'); ?>
     <main class="gallery">
-        <?php echo renderImages('img'); ?>
+        <?php
+            echo renderImages(IMG_DIR);
+        ?>
     </main>
     <div id="modal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img src="" class="modal-content" alt="" id="bigImg">
+        <p id="viewsCounter"></p>
     </div>
     <script src="js/script.js"></script>
 </body>
