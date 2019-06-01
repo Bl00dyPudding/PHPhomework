@@ -63,4 +63,3 @@ function addImagesToDB($imgDirName) {
     sendSQL($sql);
 
 }
-

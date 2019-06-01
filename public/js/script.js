@@ -25,4 +25,25 @@ let currentImg = (number, viewsCount) => {
     let views = document.getElementById('viewsCounter');
     views.innerText = `Просмотров: ${viewsCount}`;
 
+    makeGETRequest(`../engine/ajax.php?id=${number}`);
+
+};
+
+let makeGETRequest = url => {
+    let xhr;
+
+    if (window.XMLHttpRequest) {
+        xhr = new XMLHttpRequest();
+    } else if (window.ActiveXObject) {
+        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            console.log('+1');
+        }
+    }
+
+    xhr.open('GET', url, true);
+    xhr.send();
 };
