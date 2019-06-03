@@ -1,6 +1,6 @@
 <?php
 
-include_once('../config/config.php') ;
+require_once ('../config/config.php') ;
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
