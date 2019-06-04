@@ -5,7 +5,7 @@ window.onload = function() {
 
         document.getElementById('preloader').classList.add('hidden');
 
-    }, 5000);
+    }, 1000);
 
 };
 

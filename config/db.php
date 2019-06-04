@@ -1,7 +1,13 @@
 <?php
 
+define('DB_HOST', '127.0.0.1');
+define('DB_PORT', '8889');
+define('DB_NAME', 'php_project_db');
+define('DB_USER', 'root');
+define('DB_PASS', 'root');
+
 function getConnectToDB(){
-    return new PDO('mysql:host=127.0.0.1;port=8889;dbname=php_project_db', 'root', 'root');
+    return new PDO('mysql:host='.DB_HOST.';port='.DB_PORT.';dbname='.DB_NAME, DB_USER , DB_PASS);
 }
 
 function getSQL($sql){
